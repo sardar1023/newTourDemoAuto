@@ -13,11 +13,11 @@ public class BuyFlightPageAction {
 		BuyFlightPage.txt_passFirst0().sendKeys("mike");
 		Log.info("First Passenger first name inserted");
 		BuyFlightPage.txt_passLast0().sendKeys("johns");
-		Log.info("First Passenger last name inserted");
+		Log.error("First Passenger last name inserted");
 		BuyFlightPage.txt_passFirst1().sendKeys("hasan");
-		Log.info("Second Passenger first name inserted");
+		Log.warn("Second Passenger first name inserted");
 		BuyFlightPage.txt_passLast1().sendKeys("rehman");
-		Log.info("Second Passenger last name inserted");
+		Log.fatal("Second Passenger last name inserted");
 		FlightFindPage.SelectItem(BuyFlightPage.slc_creditCard(), 1);
 		Log.info("Credit Card Type is selected");
 		BuyFlightPage.txt_creditnumber().sendKeys("1234567896541");

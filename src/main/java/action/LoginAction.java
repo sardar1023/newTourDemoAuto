@@ -1,11 +1,14 @@
 package action;
 
+
 import helper.Credentials;
 import helper.Log;
 import pageobjects.LoginPage;
 
 public class LoginAction {
 	public static void Execute() throws Exception{
+		
+		
 		LoginPage.startAPP();
 		
 		Log.info("Application Started");
