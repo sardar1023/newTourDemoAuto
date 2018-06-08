@@ -53,7 +53,7 @@ public class LoginPage extends BasePage {
 	public static void startAPP() {
 		String driverPath = Credentials.chromeDriverPath;
 		String url = Credentials.url;
-		System.setProperty("wedriver.chrome.driver", driverPath);
+		System.setProperty("webdriver.chrome.driver", driverPath);
 		//driver = new FirefoxDriver();
 		driver = new ChromeDriver();
 		driver.get(url);
