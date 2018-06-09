@@ -124,140 +124,140 @@ formatter.match({
   "location": "NewTourSteps.user_open_the_page()"
 });
 formatter.result({
-  "duration": 5267809792,
+  "duration": 6336552957,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_insert_username()"
 });
 formatter.result({
-  "duration": 113541225,
+  "duration": 100425561,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_insert_password()"
 });
 formatter.result({
-  "duration": 80014681,
+  "duration": 81990386,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_click_login_button()"
 });
 formatter.result({
-  "duration": 3173013865,
+  "duration": 3135121885,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_select_the_passenger_count()"
 });
 formatter.result({
-  "duration": 165398255,
+  "duration": 175348287,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_select_departure()"
 });
 formatter.result({
-  "duration": 213194835,
+  "duration": 211230587,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_select_the_destination()"
 });
 formatter.result({
-  "duration": 186611110,
+  "duration": 181522711,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_select_the_airline()"
 });
 formatter.result({
-  "duration": 155664320,
+  "duration": 159073706,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_click_find_flight_button()"
 });
 formatter.result({
-  "duration": 384079711,
+  "duration": 392408014,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_click_reserve_flight_button()"
 });
 formatter.result({
-  "duration": 489291448,
+  "duration": 595030199,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_insert_first_passenger_first_name()"
 });
 formatter.result({
-  "duration": 176819102,
+  "duration": 174847743,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_insert_first_passenger_last_name()"
 });
 formatter.result({
-  "duration": 126043754,
+  "duration": 125681087,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_insert_second_passenger_first_name()"
 });
 formatter.result({
-  "duration": 126325038,
+  "duration": 92323628,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_insert_second_passenger_last_name()"
 });
 formatter.result({
-  "duration": 84034437,
+  "duration": 80576064,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_select_the_credit_card_type()"
 });
 formatter.result({
-  "duration": 141313297,
+  "duration": 133022525,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_insert_the_credit_card_number()"
 });
 formatter.result({
-  "duration": 146399721,
+  "duration": 166698403,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_select_the_credeit_card_expiration_month()"
 });
 formatter.result({
-  "duration": 261426379,
+  "duration": 281300370,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_select_the_credeit_card_expiration_year()"
 });
 formatter.result({
-  "duration": 210968661,
+  "duration": 214239379,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_click_buy_flight_button()"
 });
 formatter.result({
-  "duration": 585632462,
+  "duration": 485711001,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_close_the_browser()"
 });
 formatter.result({
-  "duration": 151374342,
+  "duration": 158156372,
   "status": "passed"
 });
 });

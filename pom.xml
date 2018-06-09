@@ -31,7 +31,6 @@
 			<version>1.3.2</version>
 		</dependency>
 		<dependency>
-<<<<<<< HEAD
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>1.2.4</version>
@@ -47,14 +46,12 @@
 			<artifactId>cucumber-core</artifactId>
 			<version>1.2.4</version>
 		</dependency>
-
-=======
+		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-surefire-plugin</artifactId>
 			<version>2.21.0</version>
 			<type>maven-plugin</type>
 		</dependency>
->>>>>>> f920527ec90a60c9c7524359cb11a3eba4fd2260
 	</dependencies>
 
 	<build>
