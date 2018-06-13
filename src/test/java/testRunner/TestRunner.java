@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 		features = {"C:/Users/sarda/workspace/developer/com.tek.automation/src/test/resources/feature"},
 		glue = {"stepDefinition"},
 		plugin = { "pretty", "html:target/cucumber-reports" },
-		tags = {"@smoke"},
+		tags = {"@smoke1"},
 		dryRun = false,
 		monochrome = true
 		)

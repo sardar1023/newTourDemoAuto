@@ -11,7 +11,6 @@ import pageobjects.LoginPage;
 import pageobjects.ReserveFlightPage;
 
 public class NewTourSteps {
-
 	@Given("^user open the page$")
 	public void user_open_the_page() throws Throwable {
 
@@ -133,4 +132,13 @@ public class NewTourSteps {
 		ReserveFlightPage.tearDown();
 	}
 
+	@When("^user insert username as \"([^\"]*)\"$")
+	public void user_insert_username_as(String arg1) throws Throwable {
+		System.out.println("username inserted");
+	}
+
+	@Then("^user insert password as \"([^\"]*)\"$")
+	public void user_insert_password_as(String arg1) throws Throwable {
+		System.out.println("password inserted");
+	}
 }
