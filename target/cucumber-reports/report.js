@@ -6,258 +6,231 @@ formatter.feature({
   "id": "login-page",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "line": 4,
-  "name": "New Tour Demo Login",
+formatter.scenarioOutline({
+  "line": 27,
+  "name": "This is multiple login",
   "description": "",
-  "id": "login-page;new-tour-demo-login",
-  "type": "scenario",
-  "keyword": "Scenario",
+  "id": "login-page;this-is-multiple-login",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 3,
-      "name": "@smoke"
+      "line": 26,
+      "name": "@smoke1"
     }
   ]
 });
 formatter.step({
-  "line": 5,
+  "line": 28,
   "name": "user open the page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
-  "name": "user insert username",
+  "line": 29,
+  "name": "user insert username as \"\u003cusername\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
-  "name": "user insert password",
+  "line": 30,
+  "name": "user insert password as \"\u003cpassword\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
+  "line": 31,
   "name": "user click login button",
   "keyword": "Then "
 });
+formatter.examples({
+  "line": 33,
+  "name": "",
+  "description": "",
+  "id": "login-page;this-is-multiple-login;",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password"
+      ],
+      "line": 34,
+      "id": "login-page;this-is-multiple-login;;1"
+    },
+    {
+      "cells": [
+        "abc",
+        "123"
+      ],
+      "line": 35,
+      "id": "login-page;this-is-multiple-login;;2"
+    },
+    {
+      "cells": [
+        "bcd",
+        "234"
+      ],
+      "line": 36,
+      "id": "login-page;this-is-multiple-login;;3"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 35,
+  "name": "This is multiple login",
+  "description": "",
+  "id": "login-page;this-is-multiple-login;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 26,
+      "name": "@smoke1"
+    }
+  ]
+});
 formatter.step({
-  "line": 9,
-  "name": "user select the passenger count",
+  "line": 28,
+  "name": "user open the page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 29,
+  "name": "user insert username as \"abc\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 30,
+  "name": "user insert password as \"123\"",
+  "matchedColumns": [
+    1
+  ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
-  "name": "user select departure",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user select the destination",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "user select the airline",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "user click find flight button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 14,
-  "name": "user click reserve flight button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 15,
-  "name": "user insert first passenger first name",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "user insert first passenger last name",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "user insert second passenger first name",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "user insert second passenger last name",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "user select the credit card type",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "user insert the credit card number",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 21,
-  "name": "user select the credeit card expiration month",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 22,
-  "name": "user select the credeit card expiration year",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 23,
-  "name": "user click buy flight button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 24,
-  "name": "user close the browser",
+  "line": 31,
+  "name": "user click login button",
   "keyword": "Then "
 });
 formatter.match({
   "location": "NewTourSteps.user_open_the_page()"
 });
 formatter.result({
-  "duration": 6336552957,
+  "duration": 5809708887,
   "status": "passed"
 });
 formatter.match({
-  "location": "NewTourSteps.user_insert_username()"
+  "arguments": [
+    {
+      "val": "abc",
+      "offset": 25
+    }
+  ],
+  "location": "NewTourSteps.user_insert_username_as(String)"
 });
 formatter.result({
-  "duration": 100425561,
+  "duration": 2003755,
   "status": "passed"
 });
 formatter.match({
-  "location": "NewTourSteps.user_insert_password()"
+  "arguments": [
+    {
+      "val": "123",
+      "offset": 25
+    }
+  ],
+  "location": "NewTourSteps.user_insert_password_as(String)"
 });
 formatter.result({
-  "duration": 81990386,
+  "duration": 73087,
   "status": "passed"
 });
 formatter.match({
   "location": "NewTourSteps.user_click_login_button()"
 });
 formatter.result({
-  "duration": 3135121885,
+  "duration": 1151975232,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 36,
+  "name": "This is multiple login",
+  "description": "",
+  "id": "login-page;this-is-multiple-login;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 26,
+      "name": "@smoke1"
+    }
+  ]
+});
+formatter.step({
+  "line": 28,
+  "name": "user open the page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 29,
+  "name": "user insert username as \"bcd\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 30,
+  "name": "user insert password as \"234\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 31,
+  "name": "user click login button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "NewTourSteps.user_open_the_page()"
+});
+formatter.result({
+  "duration": 3684550467,
   "status": "passed"
 });
 formatter.match({
-  "location": "NewTourSteps.user_select_the_passenger_count()"
+  "arguments": [
+    {
+      "val": "bcd",
+      "offset": 25
+    }
+  ],
+  "location": "NewTourSteps.user_insert_username_as(String)"
 });
 formatter.result({
-  "duration": 175348287,
+  "duration": 104691,
   "status": "passed"
 });
 formatter.match({
-  "location": "NewTourSteps.user_select_departure()"
+  "arguments": [
+    {
+      "val": "234",
+      "offset": 25
+    }
+  ],
+  "location": "NewTourSteps.user_insert_password_as(String)"
 });
 formatter.result({
-  "duration": 211230587,
+  "duration": 80988,
   "status": "passed"
 });
 formatter.match({
-  "location": "NewTourSteps.user_select_the_destination()"
+  "location": "NewTourSteps.user_click_login_button()"
 });
 formatter.result({
-  "duration": 181522711,
-  "status": "passed"
-});
-formatter.match({
-  "location": "NewTourSteps.user_select_the_airline()"
-});
-formatter.result({
-  "duration": 159073706,
-  "status": "passed"
-});
-formatter.match({
-  "location": "NewTourSteps.user_click_find_flight_button()"
-});
-formatter.result({
-  "duration": 392408014,
-  "status": "passed"
-});
-formatter.match({
-  "location": "NewTourSteps.user_click_reserve_flight_button()"
-});
-formatter.result({
-  "duration": 595030199,
-  "status": "passed"
-});
-formatter.match({
-  "location": "NewTourSteps.user_insert_first_passenger_first_name()"
-});
-formatter.result({
-  "duration": 174847743,
-  "status": "passed"
-});
-formatter.match({
-  "location": "NewTourSteps.user_insert_first_passenger_last_name()"
-});
-formatter.result({
-  "duration": 125681087,
-  "status": "passed"
-});
-formatter.match({
-  "location": "NewTourSteps.user_insert_second_passenger_first_name()"
-});
-formatter.result({
-  "duration": 92323628,
-  "status": "passed"
-});
-formatter.match({
-  "location": "NewTourSteps.user_insert_second_passenger_last_name()"
-});
-formatter.result({
-  "duration": 80576064,
-  "status": "passed"
-});
-formatter.match({
-  "location": "NewTourSteps.user_select_the_credit_card_type()"
-});
-formatter.result({
-  "duration": 133022525,
-  "status": "passed"
-});
-formatter.match({
-  "location": "NewTourSteps.user_insert_the_credit_card_number()"
-});
-formatter.result({
-  "duration": 166698403,
-  "status": "passed"
-});
-formatter.match({
-  "location": "NewTourSteps.user_select_the_credeit_card_expiration_month()"
-});
-formatter.result({
-  "duration": 281300370,
-  "status": "passed"
-});
-formatter.match({
-  "location": "NewTourSteps.user_select_the_credeit_card_expiration_year()"
-});
-formatter.result({
-  "duration": 214239379,
-  "status": "passed"
-});
-formatter.match({
-  "location": "NewTourSteps.user_click_buy_flight_button()"
-});
-formatter.result({
-  "duration": 485711001,
-  "status": "passed"
-});
-formatter.match({
-  "location": "NewTourSteps.user_close_the_browser()"
-});
-formatter.result({
-  "duration": 158156372,
+  "duration": 1053285968,
   "status": "passed"
 });
 });

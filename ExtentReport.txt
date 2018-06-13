@@ -1,0 +1,38 @@
+public class ExtentReport()
+{   @Test
+	public void loginVerify(){
+		
+		ExtentReports report = new ExtentReports("C:\\Users\\sarda\\Report\\advancedReport.html");
+		ExtentTest logger = report.startTest(loginVerify);
+		
+		
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\sarda\\geckodriver\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		logger.log(LogStatus.INFO,"Browser started");
+		String url = "http://demosite.center/wordpress/wp-login.php";
+		driver.get(url);
+		logger.log(LogStatus.INFO,"Application is up and running");
+		
+		driver.findElement(By.id("user_login")).sendKeys("admin");
+		logger.log(LogStatus.INFO,"username is Entered");
+	
+		driver.findElement(By.id("user_pass")).sendKeys("demo123");
+		logger.log(LogStatus.INFO,"password is Entered");
+		
+		driver.findElement(By.id("wp-submit")).click();
+		Thread.sleep(5000);
+		logger.log(LogStatus.INFO,"Successful Login");
+		String title = driver.getTitle();
+		Assert.assertTrue(title.contains("Dashboard"));
+		logger.log(LogStatus.PASS,"Successful Login/title verified");
+	
+	    driver.close();
+	}
+	public void tearDown(ITestResult result)
+	{
+		if(reslut.getstatus()==ITestResult.FAILURE){
+			String screenshot_path = Utility.
+		}
+	}
+}

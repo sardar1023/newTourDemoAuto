@@ -22,3 +22,15 @@ Feature: Login Page
     Then user select the credeit card expiration year
     Then user click buy flight button
     Then user close the browser
+
+  @smoke1
+  Scenario Outline: This is multiple login
+    Given user open the page
+    When user insert username as "<username>"
+    Then user insert password as "<password>"
+    Then user click login button
+
+    Examples: 
+      | username | password |
+      | abc      |      123 |
+      | bcd      |      234 |
